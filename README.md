@@ -1,13 +1,22 @@
-# EX-7-ADVANCED-ENCRYPTION-STANDARD-DES-ALGORITHM
+# EX-7 : Implement Data Encryption Standard (DES) Algorithm
+# AIM:
+To write a program to implement Data Encryption Standard (DES).
 
-## Aim:
-  To use Advanced Encryption Standard (AES) Algorithm for a practical application like URL Encryption.
+# ALGORITHM:
+## STEP-1:
+Read the 64-bit plain text.
 
-## ALGORITHM: 
-  1. AES is based on a design principle known as a substitution–permutation. 
-  2. AES does not use a Feistel network like DES, it uses variant of Rijndael. 
-  3. It has a fixed block size of 128 bits, and a key size of 128, 192, or 256 bits. 
-  4. AES operates on a 4 × 4 column-major order array of bytes, termed the state
+## STEP-2:
+Split it into two 32-bit blocks and store it in two different arrays.
+
+## STEP-3:
+Perform XOR operation between these two arrays.
+
+## STEP-4:
+The output obtained is stored as the second 32-bit sequence and the original second 32-bit sequence forms the first part.
+
+## STEP-5:
+Thus the encrypted 64-bit cipher text is obtained in this way. Repeat the same process for the remaining plain text characters.
 
 ## PROGRAM: 
 ```
